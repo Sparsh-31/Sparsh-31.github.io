@@ -85,7 +85,7 @@ nav ul li a:hover::after {
 
 /* nav start */
 
-.navbar {
+/* .navbar {
     position: fixed;
     width: 100%;
     z-index: 999;
@@ -132,8 +132,6 @@ nav ul li a:hover::after {
   .navbar.sticky .menu li a:hover {
     color: #fff;
   }
-  
-  /* menu btn styling */
   .menu-btn {
     color: #fff;
     font-size: 23px;
@@ -176,7 +174,7 @@ nav ul li a:hover::after {
   }
   html {
     scroll-behavior: smooth;
-  }
+  } */
 
 
 
@@ -430,6 +428,10 @@ button:hover {
 /* ========== My Project ========== */
 #projects {
     padding-top: 50px;
+    width: 80%;
+    margin: auto;
+    
+
 }
 
 .work-list {
@@ -658,6 +660,203 @@ form button {
 }
 
 /* ---------------------------------------------------------------------------------------------------------- */
+/* Nav */
+
+#sidemenu{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 25px;
+}
+
+#sidemenu>li{
+    list-style-type: none
+}
+
+
+
+#resume-button-1{
+    padding: 10px;
+    margin-top: 0px;
+    background-color: red;
+} 
+
+#resume-button-1:hover{
+    background-color: rgb(247, 161, 161);
+}
+
+#resume-button-2{
+    padding: 10px;
+    margin-top: 0px;
+    background-color: red;
+} 
+
+#resume-button-2:hover{
+    background-color: rgb(247, 161, 161);
+}
+
+.nav-link{
+    color: white;
+}
+/* nav ended */
+/* Project section */
+
+.all-projects>div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+.project-card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 25px;
+}
+
+.all-projects img{
+    width: 80%;
+}
+
+/* Contect */
+
+/* #contact>h1{
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(36, 36, 36);
+    margin-bottom: 30px;
+}
+
+#contact>div{
+
+    border:1px solid black;
+    width:80%;
+    margin:30px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.personal-info{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.personal-info>div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 30px;
+    height:100%;
+    margin:20px auto;
+    background-color: white;
+    width: 100%;
+}
+.personal-info>div>div{
+    margin:25px auto;
+}
+.personal-info>div>div>p{
+    margin: 5px 10px;
+}
+
+.info-head{
+    display: flex;
+    align-items: center;
+    margin: 5px 10px;
+    color: black;
+}
+.info-head>i{
+    margin-right: 8px;
+}
+.send-info{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.send-info>div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color:white;
+    width:100%;
+    margin:20px auto;
+    height: 100%;
+    padding: 10px;
+
+}
+.input-box{
+    background-color: rgb(28, 28, 28);
+    margin: 15px 20px;
+}
+.input-box:first-child{
+    margin-top:20px;
+}
+
+.input-box>p{
+    padding: 10px 15px 0px;
+    font-size: 14px;
+    color: white;
+}
+.input-box>input ,.input-box>textarea {
+    background-color: rgb(28, 28, 28);
+    border: none;
+    resize: none;
+    border-radius:20px ;
+    font-size: 14px;
+    padding:0px 15px 10px;
+    color:white;
+    width: 100%;
+    box-sizing: border-box;
+}
+.input-box>input:focus , .input-box>textarea:focus{
+    outline: none;
+}
+.submit-btn {
+    margin: 15px 20px 20px;
+}
+.submit-btn > button{
+    font-size: 16px;
+    padding: 8px 12px;
+    background-color: rgb(28, 28, 28);
+    border: 2px solid rgb(28, 28, 28);
+    color:white;
+    cursor: pointer;
+    user-select: none;
+}
+.submit-btn > button:hover{
+   
+    background-color: white;
+    border: 2px solid black;
+    color:black;
+
+} */
+
+
+#contact>div{
+    display: flex;
+
+    width: 80%;
+    justify-content: space-evenly;
+    /* border: 5px solid red; */
+    margin: auto;
+    margin-bottom: 50px;
+
+}
+
+.input-box>input{
+    width: 80%;
+}
+
+.personal-info{
+    width: 40%;
+}
+
+.send-info{
+    width: 40%;
+}
+/* Contect ended */
+
+
+
+/* Project Section ended */
+
 
 nav .fa-solid {
     display: none;
@@ -699,6 +898,8 @@ nav .fa-solid {
         z-index: 2;
         transition: right 0.5s;
     }
+
+
 
     nav ul li {
         display: block;
