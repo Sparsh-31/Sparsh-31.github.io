@@ -22,27 +22,20 @@
 
 	<div id="header">
 		<div class="container" , class="nav container">
-			<nav id="nav-menu">
-				<ul id="sidemenu">
-					<li><a href="#home" class="nav-link home" style="text-decoration: none;">Home</a></li>
-					<li><a href="#about" class="nav-link about">About</a></li>
-					<li><a href="#skills" class="nav-link skills">Skills</a></li>
-					<li><a href="#projects" class="nav-link projects">Projects</a></li>
-					<li><a href="#statistics" class="nav-link">Statistics</a></li>
-					<li><a href="#contact" class="nav-link contact">Contact</a></li>
-					<li>
-					 <button onclick="resume()"  id="resume-button-1" >
-							
-						<a class="nav-link resume" id="resume-link-1" style="margin-top:0px"
-								href="Images/Sparsh_Kotwani_Resume.pdf" target="_blank" download>
-								Resume </a>
-							</button> 		
-					</li>
-
-					<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-				</ul>
-				<i class="fa-solid fa-bars" onclick="openmenu()"></i>
-			</nav>
+			<nav>
+                <img src="/Images/SK.Logo.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#statistics">Statistics</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="/Images/Sparsh_Kotwani_Resume.pdf" download>Resume</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
 
 			<!-- home section -->
 			<!-- REfrewa -->
@@ -59,7 +52,7 @@
 				<button onclick="resume()" style="border: none;" id="resume-button-2">
 					<a class="nav-link resume" id="resume-link-2" href="Images/Sparsh_Kotwani_Resume.pdf"
 						target="_blank" download>
-						Download Resume </a>
+						 Download Resume </a>
 				</button>
 			</div>
 		</div>
@@ -147,17 +140,42 @@
 				<div>
 					<h2>Tech Tools <i class="fa-solid fa-code-branch"></i></h2>
 					<div>
-						<img src="icons/github-icon.png" alt="github" title="GitHub">
-						<img src="icons/visual-studio-code-icon.png" alt="vscode" title="Visual Studio Code">
-						<img src="icons/postman-icon.png" alt="postman" title="Postman">
-						<img src="icons/notion-icon.png" alt="notion" title="Notion">
-						<img src="icons/codepen-icon.png" alt="codepen" title="CodePen">
+						<div>
+							<img src="icons/github-icon.png" alt="github" title="GitHub"
+								class="skills-card-img">
+							<p class="skills-card-name">GitHub</p>
+						</div>
+						<div>
+							<img src="icons/visual-studio-code-icon.png" alt="vscode" title="Visual Studio Code"
+								class="skills-card-img">
+							<p class="skills-card-name">VS Code</p>
+						</div>
+						<div>
+							<img src="icons/postman-icon.png" alt="postman" title="Postman"
+								class="skills-card-img">
+							<p class="skills-card-name">Postman</p>
+						</div>
+						<div>
+							<img src="icons/notion-icon.png" alt="notion" title="Notion"
+								class="skills-card-img">
+							<p class="skills-card-name">Notion</p>
+						</div>
+						<div>
+							<img src="icons/codepen-icon.png" alt="codepen" title="CodePen"
+								class="skills-card-img">
+							<p class="skills-card-name">CodePen</p>
+						</div>
+						
 					</div>
 				</div>
 				<div>
 					<h2>Other Design Tools <i class="fa-solid fa-compass-drafting"></i></h2>
 					<div>
-						<img src="icons/canva-icon.png" alt="canva" title="Canva">
+						<div>
+							<img src="icons/canva-icon.png" alt="canva" title="Canva"
+								class="skills-card-img">
+							<p class="skills-card-name">Canva</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -375,13 +393,13 @@
 
 <script>
 
-	var sidemenu = document.getElementById("sidemenu");
-	function openmenu() {
-		sidemenu.style.right = "0";
-	}
-	function closemenu() {
-		sidemenu.style.right = "-250px";
-	}
+var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-250px";
+    }
 
 	document.getElementById("resume-button-1").onclick = () => {
 		window.open("https://drive.google.com/file/d/1DMSxlCK_49qKd3YV0RyLVcsst41NKc9m/view?usp=sharing", `_blank`)
