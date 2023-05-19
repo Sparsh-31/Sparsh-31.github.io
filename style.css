@@ -885,7 +885,7 @@ nav .fa-solid {
 @media only screen and (max-width: 540px) {
     #header {
         height: 90vh;
-        background-image: url(/images/header\ 4.jpg);
+        background-image: url(/Images/header\ 4.jpg);
     }
 
     .header-text {
