@@ -563,6 +563,34 @@ button>a:hover{
     background: rgb(200, 0, 0);
 }
 
+.project-deployed-video{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.project-deployed-link{
+    text-decoration: none;
+    color: whitesmoke;
+    /* border: 0.5px solid white; */
+    padding: 0.5px;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+.project-deployed-link:hover{
+    background-color: red;
+}
+
+.project-github-link{
+    text-decoration: none;
+    color: whitesmoke;
+    /* border: 0.5px solid white; */
+    padding: 0.5px;
+    /* margin-top: 10px; */
+}
+.project-github-link:hover{
+    background-color: red;
+}
 
 /* ========== Statistics ========== */
 #statistics {
